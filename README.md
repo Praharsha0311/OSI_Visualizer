@@ -42,5 +42,7 @@ After the message is received, click the "Reset" button to clear the previous se
 **Technologies Used**
 
 HTML
+
 CSS
+
 JavaScript
