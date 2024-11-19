@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Message Flow Through OSI Layers</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Message Input and Send Button -->
+  <div id="message-container">
+    <input type="text" id="message-input" placeholder="Enter your message">
+    <button id="send-btn">Send Message</button>
+  </div>
+
+  <div id="main-container">
+    <!-- Sender Side -->
+    <div id="sender-side">
+      <h2>Sender Side</h2>
+      <div id="sender-app-layer" class="layer">Application Layer</div>
+      <span class="arrow" id="sender-arrow-1">↓</span>
+      <div id="sender-pres-layer" class="layer">Presentation Layer</div>
+      <span class="arrow" id="sender-arrow-2">↓</span>
+      <div id="sender-sess-layer" class="layer">Session Layer</div>
+      <span class="arrow" id="sender-arrow-3">↓</span>
+      <div id="sender-trans-layer" class="layer">Transport Layer</div>
+      <span class="arrow" id="sender-arrow-4">↓</span>
+      <div id="sender-net-layer" class="layer">Network Layer</div>
+      <span class="arrow" id="sender-arrow-5">↓</span>
+      <div id="sender-data-layer" class="layer">Data Link Layer</div>
+      <span class="arrow" id="sender-arrow-6">↓</span>
+      <div id="sender-phy-layer" class="layer">Physical Layer</div>
+    </div>
+
+    <!-- Receiver Side -->
+    <div id="receiver-side">
+      <h2>Receiver Side</h2>
+      <div id="receiver-app-layer" class="layer">Application Layer</div>
+      <span class="arrow" id="receiver-arrow-1">↑</span>
+      <div id="receiver-pres-layer" class="layer">Presentation Layer</div>
+      <span class="arrow" id="receiver-arrow-2">↑</span>
+      <div id="receiver-sess-layer" class="layer">Session Layer</div>
+      <span class="arrow" id="receiver-arrow-3">↑</span>
+      <div id="receiver-trans-layer" class="layer">Transport Layer</div>
+      <span class="arrow" id="receiver-arrow-4">↑</span>
+      <div id="receiver-net-layer" class="layer">Network Layer</div>
+      <span class="arrow" id="receiver-arrow-5">↑</span>
+      <div id="receiver-data-layer" class="layer">Data Link Layer</div>
+      <span class="arrow" id="receiver-arrow-6">↑</span>
+      <div id="receiver-phy-layer" class="layer">Physical Layer</div>
+    </div>
+  </div>
+
+  <!-- Reset Button -->
+  <button id="reset-btn" style="display: none;">Reset</button>
+
+  <script src="script.js"></script>
+</body>
+</html>

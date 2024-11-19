@@ -1,0 +1,122 @@
+/* Basic styling for the body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container for the input field and send button */
+#message-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Styling for the input field */
+#message-input {
+  padding: 8px;
+  font-size: 14px;
+  width: 70%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Styling for the send button */
+button {
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Flex container for sender and receiver sections */
+#main-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Sender and Receiver sections */
+#sender-side, #receiver-side {
+  width: 45%;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Layer styles */
+.layer {
+  background-color: #e0e0e0;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  font-size: 14px;
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+}
+
+/* Arrow styling */
+.arrow {
+  font-size: 25px;
+  color: #333;
+  margin: 5px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/* Reset Button */
+#reset-btn {
+  padding: 8px 16px;
+  background-color: #f44336; /* Red color for reset */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+#reset-btn:hover {
+  background-color: #e53935;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #sender-side, #receiver-side {
+    width: 80%;
+    margin: 10px;
+  }
+
+  #message-input {
+    width: 80%;
+  }
+}
