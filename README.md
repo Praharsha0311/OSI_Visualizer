@@ -21,7 +21,7 @@ Reset button to restart the process after receiving the message.
 
 1. Clone the repository(To do so, Use the below command)
 
-git clone https://github.com/yourusername/OSI_Visualizer.git
+   git clone https://github.com/yourusername/OSI_Visualizer.git
 
 2. Open the project in your preferred text editor.
 
